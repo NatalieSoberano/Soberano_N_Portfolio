@@ -1,0 +1,23 @@
+@import '_vars';
+@import 'modules/_errors';
+@import 'modules/_lightbox';
+
+@font-face {
+    font-family: $bodyfont;
+    src: url('NewYorkLarge-Regular.otf') format('truetype');
+  }
+@font-face {
+  font-family: $heading;
+  src: url('lato-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $heading-b;
+  src: url('Lato-Bold.ttf') format('truetype');
+}
+
+.logo {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
