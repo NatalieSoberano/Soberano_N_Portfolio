@@ -1,10 +1,171 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Natalie Soberano's Portfolio Website</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel='stylesheet' href='/css/main.css' />
   </head>
   <body>
-    {{{body}}}
+    <div>
+
+        {{!-- Open Main Nav --}}
+        <section class="row">
+          <h2 class="hidden">Main Nav</h2>
+          <img src="images/logo.png" alt="main logo" class="logo">
+
+          <nav class="row column">
+            <ul>
+              <li>Portfolio</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </section>
+
+      {{!-- Open Video Section --}}
+        <section class="row vidsection">
+          <h2 class="hidden">Video Section</h2>
+          <div class="row column">
+            <video>
+              <source src="" type="video/mp4" class="video"> 
+            </video>
+          </div>
+        </section>
+
+      {{!-- Open Portfolio Section --}}
+        <section class="row small-up-3 medium-up-3 large-up-3">
+          <h2 class="hidden">Portfolio Section</h2>
+          <h3 class="sectionBars">Works</h3>
+
+          <div class="column">
+            <img class="thumbnail" src="https://placehold.it/550x550">
+            <h5>My Site</h5>
+          </div>
+
+          <div class="column">
+            <img class="thumbnail" src="https://placehold.it/550x550">
+            <h5>My Site</h5>
+          </div>
+
+          <div class="column">
+            <img class="thumbnail" src="https://placehold.it/550x550">
+            <h5>My Site</h5>
+          </div>
+
+          <div class="column">
+            <img class="thumbnail" src="https://placehold.it/550x550">
+            <h5>My Site</h5>
+          </div>
+
+          <div class="column">
+            <img class="thumbnail" src="https://placehold.it/550x550">
+            <h5>My Site</h5>
+          </div>
+
+          <div class="column">
+            <img class="thumbnail" src="https://placehold.it/550x550">
+            <h5>My Site</h5>
+          </div>
+
+          <div class="column">
+            <img class="thumbnail" src="https://placehold.it/550x550">
+            <h5>My Site</h5>
+          </div>
+
+          <div class="column">
+            <img class="thumbnail" src="https://placehold.it/550x550">
+            <h5>My Site</h5>
+          </div>
+
+          <div class="column">
+            <img class="thumbnail" src="https://placehold.it/550x550">
+            <h5>My Site</h5>
+          </div>
+        </section>
+
+    {{!-- Open About Section  --}}
+
+      <section class="row">
+        <h2 class="hidden">About Section</h2>
+        <h3 class="sectionBars">About</h3>
+
+        <div class="row column">
+          <img src="images/me.jpg" alt="Profile Picture" class="me">
+          <p class="mePara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+        </div>
+      </section>
+
+    {{!-- Open Services Section  --}}
+
+      <section class="row">
+        <h2 class="hidden">Services Section</h2>
+        <h3 class="sectionBars">Services</h3>
+        <div class="row column">
+          <img src="images/gdesign.png" alt="Graphic Design Logo" class="designImg">
+          <h1 id="graphicSymbol">Graphic Design</h1>
+          <h2 class="resume">View & Download My Resume</h2>
+        </div>
+      </section>
+
+    {{!-- Open Contact Form --}}
+      <section class="row" class="Contact">
+        <h2 class="hidden">Contact Section</h2>
+        <h3 class="sectionBars">Contact</h3>
+
+        <div class="medium-6 columns">
+          <h3 class="myinfo">Contact</h3>
+          <h2 class="myinfo">GET IN TOUCH</h2>
+        </div>
+
+        <div class="row">
+
+          <h1 class="myinfo">PHONE</h1>
+          <p class="myinput">416-817-7729</p>
+
+          <h1 class="myinfo">EMAIL</h1>
+          <p class="myinput">NatalieSoberano@yahoo.ca</p>
+
+          <ul class="socialmedia" class="myinfo">
+            <li><a href="https://ca.linkedin.com/in/natalie-soberano-a708b8184"><img src="images/Linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.instagram.com/nats.illustrations/"><img src="images/Insta.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+
+        <div class="medium-6 columns form">
+          <label>
+            <input type="text" placeholder="NAME" class="input">
+          </label>
+
+          <label>
+            <input type="text" placeholder="EMAIL" class="input">
+          </label>
+
+          <label>
+            <input type="text" placeholder="NUMBER" class="input">
+          </label>
+
+          <label>
+            <textarea placeholder="YOUR MESSAGE" class="input"></textarea>
+          </label>
+
+          <input type="submit" class="button expanded" value="Submit">
+        </div>
+      </section>
+
+      <section class="row">
+        <h2 class="hidden">Footer</h2>
+        <footer class="row column">
+          <img src="images/logo.png" alt="logo" class="logoFooter">
+          <h1 class="nameBottom">Natalie Soberano</h1>
+        </footer>
+      </section>
+
+    </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script> $(document).foundation();</script>
+  <script src="js/main.js"></script>
   </body>
 </html>
