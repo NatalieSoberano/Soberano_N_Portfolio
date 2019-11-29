@@ -1,6 +1,13 @@
 @import '_vars';
-@import 'modules/_errors';
+@import 'modules/_nav';
+@import 'modules/_video';
+@import 'modules/_portfolio';
+@import 'modules/_about';
+@import 'modules/_services';
+@import 'modules/_contact';
 @import 'modules/_lightbox';
+@import 'modules/_footer';
+@import 'modules/_errors';
 
 @font-face {
     font-family: $bodyfont;
@@ -16,8 +23,27 @@
   src: url('Lato-Bold.ttf') format('truetype');
 }
 
+.hidden {
+  display: none;
+}
+
 .logo {
   float: left;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
+
+h3 {
+  color: white;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: $bodyfont;
+}
+
+.sectionBars {
+  text-align: center;
+  background-color: $dark-navy;
+}
+

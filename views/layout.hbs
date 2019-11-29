@@ -2,15 +2,15 @@
 <html>
   <head>
     <title>Natalie Soberano's Portfolio Website</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel='stylesheet' href='/css/main.css' />
   </head>
   <body>
-
     <div>
 
         {{!-- Open Main Nav --}}
-        <div class="callout primary">
+        <section class="row">
+          <h2 class="hidden">Main Nav</h2>
           <img src="images/logo.png" alt="main logo" class="logo">
 
           <nav class="row column">
@@ -21,18 +21,22 @@
               <li>Contact</li>
             </ul>
           </nav>
-        </div>
+        </section>
 
       {{!-- Open Video Section --}}
-        <div class="callout primary">
+        <section class="row vidsection">
+          <h2 class="hidden">Video Section</h2>
           <div class="row column">
-            <h1>Hello! This is the portfolio of a very witty person.</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+            <video>
+              <source src="" type="video/mp4" class="video"> 
+            </video>
           </div>
-        </div>
+        </section>
 
       {{!-- Open Portfolio Section --}}
-        <div class="row small-up-2 medium-up-3 large-up-4">
+        <section class="row small-up-3 medium-up-3 large-up-3">
+          <h2 class="hidden">Portfolio Section</h2>
+          <h3 class="sectionBars">Works</h3>
 
           <div class="column">
             <img class="thumbnail" src="https://placehold.it/550x550">
@@ -78,67 +82,84 @@
             <img class="thumbnail" src="https://placehold.it/550x550">
             <h5>My Site</h5>
           </div>
-
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-      </div>
+        </section>
 
     {{!-- Open About Section  --}}
 
-      <div class="callout primary">
+      <section class="row">
+        <h2 class="hidden">About Section</h2>
+        <h3 class="sectionBars">About</h3>
+
         <div class="row column">
-          <h1>Hello! This is the portfolio of a very witty person.</h1>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+          <img src="images/me.jpg" alt="Profile Picture" class="me">
+          <p class="mePara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
         </div>
-      </div>
+      </section>
+
+    {{!-- Open Services Section  --}}
+
+      <section class="row">
+        <h2 class="hidden">Services Section</h2>
+        <h3 class="sectionBars">Services</h3>
+        <div class="row column">
+          <img src="images/gdesign.png" alt="Graphic Design Logo" class="designImg">
+          <h1 id="graphicSymbol">Graphic Design</h1>
+          <h2 class="resume">View & Download My Resume</h2>
+        </div>
+      </section>
 
     {{!-- Open Contact Form --}}
-      <div class="row">
+      <section class="row" class="Contact">
+        <h2 class="hidden">Contact Section</h2>
+        <h3 class="sectionBars">Contact</h3>
 
         <div class="medium-6 columns">
-          <h3>Contact Me</h3>
-          <p> Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
-          <ul class="menu">
-            <li><a href="#">Dribbble</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Yo</a></li>
+          <h3 class="myinfo">Contact</h3>
+          <h2 class="myinfo">GET IN TOUCH</h2>
+        </div>
+
+        <div class="row">
+
+          <h1 class="myinfo">PHONE</h1>
+          <p class="myinput">416-817-7729</p>
+
+          <h1 class="myinfo">EMAIL</h1>
+          <p class="myinput">NatalieSoberano@yahoo.ca</p>
+
+          <ul class="socialmedia" class="myinfo">
+            <li><a href="https://ca.linkedin.com/in/natalie-soberano-a708b8184"><img src="images/Linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.instagram.com/nats.illustrations/"><img src="images/Insta.png" alt="Instagram"></a></li>
           </ul>
         </div>
 
-        <div class="medium-6 columns">
-          <label>Name
-            <input type="text" placeholder="Name">
+        <div class="medium-6 columns form">
+          <label>
+            <input type="text" placeholder="NAME" class="input">
           </label>
 
-          <label>Email
-            <input type="text" placeholder="Email">
+          <label>
+            <input type="text" placeholder="EMAIL" class="input">
           </label>
 
-          <label> Message
-            <textarea placeholder="holla at a designerd"></textarea>
+          <label>
+            <input type="text" placeholder="NUMBER" class="input">
+          </label>
+
+          <label>
+            <textarea placeholder="YOUR MESSAGE" class="input"></textarea>
           </label>
 
           <input type="submit" class="button expanded" value="Submit">
         </div>
-      </div>
+      </section>
 
-      <div class="callout primary">
+      <section class="row">
+        <h2 class="hidden">Footer</h2>
         <footer class="row column">
-          <h1>Hello! This is the portfolio of a very witty person.</h1>
+          <img src="images/logo.png" alt="logo" class="logoFooter">
+          <h1 class="nameBottom">Natalie Soberano</h1>
         </footer>
-      </div>
+      </section>
 
     </div>
 
