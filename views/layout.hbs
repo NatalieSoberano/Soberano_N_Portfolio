@@ -4,16 +4,41 @@
     <title>Natalie Soberano's Portfolio Website</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel='stylesheet' href='/css/main.css' />
+    <link rel="icon" type="image/png" href="images/favicon.ico">
   </head>
   <body>
-    <div>
+
+    <section class="row">
+      <div class="hero-full-screen">
+      <h1 class="hide">Hero</h1>
+          <div class="bottom-content-section" data-magellan data-threshold="0">
+            <img class="logo-top" src="images/logo.png" alt="Logo">
+            <p class="name-top">Natalie Soberano</p>
+            <a href="#go"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+
+            <nav class="row column hero-nav">
+            <h2 class="hidden">Nav Items</h2>
+              <ul>
+                <li>Portfolio</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+    </section>
+
+    <div> <h2 class="hidden">Site Container</h2>
 
         {{!-- Open Main Nav --}}
-        <section class="row">
+        <header class="row" id="go">
           <h2 class="hidden">Main Nav</h2>
           <img src="images/logo.png" alt="main logo" class="logo">
 
           <nav class="row column">
+          <h2 class="hidden">Nav Items</h2>
             <ul>
               <li>Portfolio</li>
               <li>About</li>
@@ -21,14 +46,15 @@
               <li>Contact</li>
             </ul>
           </nav>
-        </section>
+        </header>
 
       {{!-- Open Video Section --}}
         <section class="row vidsection">
-          <h2 class="hidden">Video Section</h2>
-          <div class="row column">
-            <video>
-              <source src="" type="video/mp4" class="video"> 
+          <h2>Video Section - Demo Reel</h2>
+          <div class="responsive-embed">
+            <video controls>
+              <source src="video/vid.mp4" type="video/mp4">
+              Your browser does not support the video tag.
             </video>
           </div>
         </section>
