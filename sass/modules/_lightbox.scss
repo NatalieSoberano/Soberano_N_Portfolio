@@ -1,0 +1,39 @@
+.show-lightbox { display: flex !important; }
+
+.lightbox { 
+    display: none;
+    //display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    // z-index: 90000px;
+    padding: 20px;
+    background-color:#8e6dcc;
+    text-align: center;
+    margin: 0 auto;
+
+    .close {    
+        right: 24px;
+        top: 20px;
+        cursor: pointer;
+        font-size: 2em;
+        position: fixed;
+        border: thin solid white;
+        padding: 2px 14px 5px;
+        border-radius: 50%;
+        background-color: #e94695;
+    }
+}
+
+p {
+    font-family: $bodyfont;
+    color:white;
+  }
+
+.circle {
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    float: left;
+}
