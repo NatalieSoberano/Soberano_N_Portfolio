@@ -1,16 +1,22 @@
 .designImg {
     height: 220px;
     width: 220px;
+    margin: 0 auto;
+    display: block;
 }
 
-.graphicSymbol {
+#graphicSymbol {
     text-align: center;
 }
 
 .resume {
     text-align: center;
-    background-color: $purple;
     color: white;
-    // font-family: $heading;
     text-transform: uppercase;
+}
+
+.divres {
+    background-color: $purple;
+    height: 50px;
+    margin-bottom: 15px;
 }

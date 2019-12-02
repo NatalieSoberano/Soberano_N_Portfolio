@@ -1,11 +1,27 @@
 .logoFooter {
   float: left;
-  height: 80px;
-  width: 80px;
+  position: relative;
+  height: 70px;
+  width: 70px;
+  margin-left: 8px;
+}
+
+footer {
+  background-color: $dark-navy;
+  height: 75px;
+  padding-top: 2px;
+  padding-bottom: 35px;
 }
 
 .nameBottom {
-    background-color: $dark-navy;
     color: white;
-    font-size: 50px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 26px;
+    margin-left: 95px;
+}
+
+ul {
+  list-style-type: none;
 }
