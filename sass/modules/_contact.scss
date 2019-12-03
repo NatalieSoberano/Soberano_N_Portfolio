@@ -16,13 +16,21 @@ li {
     color: black;
 }
 
+.C {
+    float: left;
+    display: block;
+    margin: 0px;
+    padding-top: 0px;
+}
+
 .myinfo {
-    // float: left;
     text-transform: uppercase;
 }
 
 .form {
     float: right;
+    margin: 0px;
+    padding-top: 0px;
 }
 
 .get {

@@ -15,8 +15,11 @@
             <img class="logo-top" src="images/logo.png" alt="Logo">
             <p class="name-top">Natalie Soberano</p>
             <a href="#go"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+          </div>
+        </div>
 
-            <nav class="row column hero-nav">
+        <div class="row">
+            <nav class="small-12 columns hero-nav">
             <h2 class="hidden">Nav Items</h2>
               <ul>
                 <li>Portfolio</li>
@@ -25,21 +28,24 @@
                 <li>Contact</li>
               </ul>
             </nav>
-
           </div>
-        </div>
     </section>
 
-    <div> <h2 class="hidden">Site Container</h2>
+
+    <div> 
+      <h2 class="hidden">Site Container</h2>
 
         {{!-- Open Main Nav --}}
-        <header class="row" id="go">
+        <header class="row mainnav" id="go">
           <h2 class="hidden">Main Nav</h2>
-          <img src="images/logo.png" alt="main logo" class="logo">
+            {{!-- <div class="small-3 columns">
+              <img src="images/logo.png" alt="main logo" class="logo">
+            </div> --}}
 
-          <nav class="row column">
-          <h2 class="hidden">Nav Items</h2>
+          <nav class="small-9 columns fixed-nav-bar ">
+            <h2 class="hidden">Nav Items</h2>
             <ul>
+              <li> <img src="images/logo.png" alt="main logo" class="logo"></li>
               <li>Portfolio</li>
               <li>About</li>
               <li>Services</li>
@@ -49,15 +55,15 @@
         </header>
 
       {{!-- Open Video Section --}}
-        <section class="row vidsection">
-          <h2>Video Section - Demo Reel</h2>
-          <div class="responsive-embed">
-            <video controls>
-              <source src="video/vid.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </section>
+          <h2 class="hidden vidsection">Video Section - Demo Reel</h2>
+          <section class="row">
+            <div class="small-12 columns" id="player-overlay">
+              <div class="responsive-embed">
+                <video controls src="video/vid.mp4" width="100%" video="100%" style="width:100%" style="height:100%"></video>
+              </div>
+            </div>
+          </section>
+        
 
       {{!-- Open Portfolio Section --}}
         <section class="row small-up-3 medium-up-3 large-up-3">
@@ -114,7 +120,7 @@
         <section class="row lightbox">
           <h2 class="hidden">Lightbox</h2>
 
-          <div class="row column">
+          <div class="small-12 columns">
             <img src="images/logo.png" alt="blah" class="image">
             <p>LIGHTBOX IS WORKING</p>
             <span class="close">x</span>
@@ -126,9 +132,11 @@
         <h2 class="hidden">About Section</h2>
         <h3 class="sectionBars">About</h3>
 
-        <div class="row column">
+        <div class="small-6 columns">
           <img src="images/me.jpg" alt="Profile Picture" class="me">
-          <p class="mePara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+        </div>
+        <div class="small-6 columns">
+           <p class="mePara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
         </div>
       </section>
 
@@ -136,26 +144,30 @@
       <section class="row">
         <h2 class="hidden">Services Section</h2>
         <h3 class="sectionBars">Services</h3>
-        <div class="row column">
+        <div class="small-6 columns">
           <img src="images/gdesign.png" alt="Graphic Design Logo" class="designImg">
           <h1 id="graphicSymbol">Graphic Design</h1>
-          <div class="divres">
-            <h3 class="resume">View & Download My Resume</h2>
-          </div>
         </div>
+        <div class="small-6 columns">
+          <p class="serviceP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+          <div class="columns divres">
+            <h3 class="resume">View & Download My Resume</h3>
+          </div>
       </section>
 
     {{!-- Open Contact Form --}}
-      <section class="row Contact">
+      <section class=" row Contact">
         <h2 class="hidden">Contact Section</h2>
         <h3 class="sectionBars">Contact</h3>
 
-        <div class="small-6 columns">
-          <h3 class="myinfo">Contact</h3>
-          <h2 class="myinfo get">Get In Touch</h2>
-        </div>
-
         <div class="row">
+          <div class="small-3 medium-3 columns C">
+            <h3 class="myinfo">Contact</h3>
+            <h2 class="myinfo get">Get In Touch</h2>
+          </div>
+
+        <div class="small-3 medium-3 columns">
 
           <h1 class="myinfo">Phone</h1>
           <p class="myinput">416-817-7729</p>
@@ -168,6 +180,7 @@
             <li><a href="https://www.instagram.com/nats.illustrations/" target="_blank"><img src="images/Insta.png" alt="Instagram"></a></li>
           </ul>
         </div>
+
 
         <div class="small-6 columns form">
           <label>
@@ -188,11 +201,13 @@
 
           <input type="submit" class="button expanded submit" value="Submit">
         </div>
+
+        </div>
       </section>
 
       <section class="row">
         <h2 class="hidden">Footer</h2>
-        <footer class="row column">
+        <footer class="small-12 columns">
           <img src="images/logo.png" alt="logo" class="logoFooter">
           <p class="nameBottom">Natalie Soberano</p>
         </footer>
