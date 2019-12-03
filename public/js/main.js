@@ -1,10 +1,17 @@
 (() => {
 const
 seeMoreButton = document.querySelectorAll('.thumbnail'),
-lighBox = document.querySelector('.lightbox');
+lightBox = document.querySelector('.lightbox'),
+showNav = documnet.querySelector('.fixed-nav-bar');
+
+function showStickyNav() {
+    var go = arrow('click').attr('.fixed-nav-bar');
+    ('.fixed-nav-bar').css('display', 'none');
+    showNav('click').css('display', 'inline');
+}
 
 function buildLightBox(portfolio, el) {
-    lightBox.querySelector(".image").data = `images/${portfoliodata.IMG}`;
+    lightBox.querySelector(".image").data = `images/${portfolio.IMG}`;
     // the first brackets are a class and the second image is the column in the db
 
     //show the popover
@@ -16,6 +23,7 @@ function buildLightBox(portfolio, el) {
 
     let targetEl= this, 
         url =`/svgdata/${this.id}`;
+
 
     fetch(url)
     .then(res => res.json())
@@ -34,6 +42,8 @@ const svgGraphic = document.querySelector
 // svgGraphic.addEventListener("click", () => {
 //     console.log(this);
 // })
+
+showNav.for(button => button.addEventListener("click", showStickyNav));
 
 seeMoreButton.forEach(button => button.addEventListener("click", fetchData));
 

@@ -24,12 +24,13 @@ nav ul li {
 }
 
 
-//working but not in right spot
-// .fixed-nav-bar {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: 9999;
-//   width: 100%;
-//   height: 60px;
-// }
+// working but not in right spot
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  display: none;
+}

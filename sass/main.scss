@@ -14,14 +14,15 @@
     font-family: $bodyfont;
     src: url('NewYorkLarge-Regular.otf') format('truetype');
   }
+  
 @font-face {
   font-family: $heading;
-  src: url('lato-regular-webfont.ttf') format('truetype');
+  src: url('Lato-Regular.ttf') format('opentype');
 }
 
 @font-face {
   font-family: $heading-b;
-  src: url('Lato-Bold.ttf') format('truetype');
+  src: url('Lato-Bold.ttf') format('opentype');
 }
 
 .hidden {
@@ -30,7 +31,10 @@
 
 body {
   font-family: $bodyfont;
+  left: 2px;
+  right: 0;
 }
+
 
 .logo {
   float: left;
@@ -47,6 +51,9 @@ h3 {
 .sectionBars {
   text-align: center;
   background-color: $dark-navy;
+}
 
+li {
+  font-family: $heading-b;
 }
 
