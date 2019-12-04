@@ -1,17 +1,22 @@
 (() => {
+    // console.log("connected");
+
 const
 seeMoreButton = document.querySelectorAll('.thumbnail'),
 lightBox = document.querySelector('.lightbox'),
-showNav = documnet.querySelector('.fixed-nav-bar');
+button = document.querySelector('.arrow'),
+nav = document.querySelector('.fixed-nav-bar');
 
-function showStickyNav() {
-    var go = arrow('click').attr('.fixed-nav-bar');
-    ('.fixed-nav-bar').css('display', 'none');
-    showNav('click').css('display', 'inline');
+function showNav(){
+    nav.classList.remove('hide');
+
+    // console.log("hi");
 }
 
 function buildLightBox(portfolio, el) {
-    lightBox.querySelector(".image").data = `images/${portfolio.IMG}`;
+    lightBox.querySelector(".name").text = `Name/${portfolio.name}`;
+    lightBox.querySelector(".img").data = `Image/${portfolio.img}`;
+    lightBox.querySelector(".text").data = `Text/${portfolio.text}`;
     // the first brackets are a class and the second image is the column in the db
 
     //show the popover
@@ -43,7 +48,7 @@ const svgGraphic = document.querySelector
 //     console.log(this);
 // })
 
-showNav.for(button => button.addEventListener("click", showStickyNav));
+button.addEventListener("click", showNav);
 
 seeMoreButton.forEach(button => button.addEventListener("click", fetchData));
 

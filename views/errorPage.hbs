@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Error Page - Something Broke!</title>
-</head>
-<body>
-    <main class="row error-section">
-        <h5 class="row column .errorp">Oh no, something isnt working...</h5>
-        {{!-- <img src="images/404-error.gif" alt="404 not found" class="row column errorimg"> --}}
-        <a class="row column error-home" href="/">Back to Home</a>
-        {{{ body }}}
-    </main>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Error Page - Something Broke!</title>
+    </head>
+    <body class="error">
+        <main class="row error-section">
+            <section class="row error-section">
+                <div class="small-12 columns">
+                <h5 class="errorp">Oh no, something isnt working...</h5>
+                    <img src="images/error.gif" alt="404 not found" class="errorimg">
+                    {{{ body }}}
+                    <a class="error-home" href="/">Back To Home</a>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

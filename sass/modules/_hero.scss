@@ -15,6 +15,7 @@
       display: block;
       margin: auto;
       margin-top: 39px;
+      margin-bottom: 25px;
     }
 }
 
@@ -40,9 +41,25 @@
     text-align: center;
     text-transform: uppercase;
     color: white;
+    margin: 5px;
+    padding: 8px;
+    letter-spacing: 2.5px;
 }
 
 nav {
     background-color: $dark-navy;
     padding-bottom: 45px;
 }
+
+.hero-nav li:first-child {
+    border: 1px solid white;
+}
+
+// .hero-nav ul li a:hover {
+//     color: $deep-pink;
+// }
+  
+
+
+
+  

@@ -1,41 +1,28 @@
 .input {
     font-family: $bodyfont;
+    font-size: 11px;
 }
 
 .socialmedia {
     height: 50px;
     width: 50px;
-    
 }
 
-li {
-    display: block;
-}
+ul {
+    list-style-type: none;
+  }
 
 .Contact p, h1 {
     color: black;
 }
 
-.C {
-    float: left;
-    display: block;
-    margin: 0px;
-    padding-top: 0px;
-}
-
 .myinfo {
     text-transform: uppercase;
-}
-
-.form {
-    float: right;
-    margin: 0px;
-    padding-top: 0px;
+    font-family: $heading;
 }
 
 .get {
     color: $light-pink;
-    // font-weight: bold;
     font-family: $heading-b;
 }
 
@@ -50,7 +37,4 @@ li {
     background-color: $navy;
 }
 
-.input{
-    font-size: 11px;
-}
 

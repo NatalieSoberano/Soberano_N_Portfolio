@@ -35,17 +35,13 @@ body {
   right: 0;
 }
 
-
-.logo {
-  float: left;
-  height: 80px;
-  width: 80px;
-}
-
 h3 {
   color: white;
   text-transform: uppercase;
-  // font-family: $heading-b;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: $heading-b;
+  letter-spacing: 2.75px;
 }
 
 .sectionBars {
@@ -54,6 +50,9 @@ h3 {
 }
 
 li {
-  font-family: $heading-b;
+  font-family: $heading;
 }
 
+a {
+  color:white;
+}
