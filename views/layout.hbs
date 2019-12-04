@@ -14,21 +14,19 @@
           <div class="bottom-content-section" data-magellan data-threshold="0">
             <img class="logo-top" src="images/logo.png" alt="Logo">
             <p class="name-top">Natalie Soberano</p>
-            <a href="#go"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
-          </div>
-        </div>
-
-        <div class="row">
+            <a href="#go"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" class="arrow"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+         
             <nav class="small-12 columns hero-nav">
             <h2 class="hidden">Nav Items</h2>
               <ul>
-                <li>Portfolio</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
+                <a href="#portfolio"><li>Portfolio</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#services"><li>Services</li></a>
+                <a href="#contact"><li>Contact</li></a>
               </ul>
             </nav>
           </div>
+      </div>
     </section>
 
 
@@ -38,82 +36,86 @@
         {{!-- Open Main Nav --}}
         <header class="row mainnav" id="go">
           <h2 class="hidden">Main Nav</h2>
-            {{!-- <div class="small-3 columns">
-              <img src="images/logo.png" alt="main logo" class="logo">
-            </div> --}}
-
-          <nav class="small-9 columns fixed-nav-bar ">
+            
+          <nav class="small-9 columns fixed-nav-bar hide">
             <h2 class="hidden">Nav Items</h2>
             <ul>
-              <li> <img src="images/logo.png" alt="main logo" class="logo"></li>
-              <li>Portfolio</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Contact</li>
-            </ul>
+                <a href="#top"><li><img src="images/logo.png" alt="main logo" class="logo" id="logo"></li></a>
+                <a href="#portfolio"><li>Portfolio</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#services"><li>Services</li></a>
+                <a href="#contact"><li>Contact</li></a>
+              </ul>
           </nav>
         </header>
 
       {{!-- Open Video Section --}}
           <h2 class="hidden vidsection">Video Section - Demo Reel</h2>
-          <section class="row">
+          <section class="row" id="top">
             <div class="small-12 columns" id="player-overlay">
               <div class="responsive-embed">
                 <video controls src="video/vid.mp4" width="100%" video="100%" style="width:100%" style="height:100%"></video>
               </div>
             </div>
           </section>
-        
 
       {{!-- Open Portfolio Section --}}
         <section class="row small-up-3 medium-up-3 large-up-3">
           <h2 class="hidden">Portfolio Section</h2>
-          <h3 class="sectionBars">Works</h3>
+          <h3 class="sectionBars" id="portfolio">Works</h3>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/550x550" id="1">
+              <h5>My Site</h5>
+              <h6>Type</h6>
+            </div>
 
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/550x550" id="2">
+              <h5>My Site</h5>
+              <h6>Type</h6>
+            </div>
 
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/550x550" id="3">
+              <h5>My Site</h5>
+              <h6>Type</h6>
+            </div>
 
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/550x550" id="4">
+              <h5>My Site</h5>
+              <h6>Type</h6>
+            </div>
 
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/550x550" id="5">
+              <h5>My Site</h5>
+              <h6>Type</h6>
+            </div>
 
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/550x550" id="6">
+              <h5>My Site</h5>
+              <h6>Type</h6>
+            </div>
 
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/550x550" id="7">
+              <h5>My Site</h5>
+              <h6>Type</h6>
+            </div>
 
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/550x550" id="8">
+              <h5>My Site</h5>
+              <h6>Type</h6>
+            </div>
 
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/550x550" id="9">
+              <h5>My Site</h5>
+              <h6>Type</h6>
+            </div>
         </section>
 
         {{!-- Open Lightbox --}}
@@ -121,17 +123,19 @@
           <h2 class="hidden">Lightbox</h2>
 
           <div class="small-12 columns">
-            <img src="images/logo.png" alt="blah" class="image">
-            <p>LIGHTBOX IS WORKING</p>
+            <h1 class="name"></h1>
+            <img src="" alt="" class="img">
+            <p class="text"></p>
             <span class="close">x</span>
+          </div>
+
           </div>
         </section>
 
     {{!-- Open About Section  --}}
       <section class="row">
         <h2 class="hidden">About Section</h2>
-        <h3 class="sectionBars">About</h3>
-
+        <h3 class="sectionBars" id="about">About</h3>
         <div class="small-6 columns">
           <img src="images/me.jpg" alt="Profile Picture" class="me">
         </div>
@@ -143,36 +147,36 @@
     {{!-- Open Services Section  --}}
       <section class="row">
         <h2 class="hidden">Services Section</h2>
-        <h3 class="sectionBars">Services</h3>
-        <div class="small-6 columns">
+        <h3 class="sectionBars" id="services">Services</h3>
+        <div class="small-6 medium-6 large-6 columns">
           <img src="images/gdesign.png" alt="Graphic Design Logo" class="designImg">
+        </div>
+        <div class="small-6 medium-6 large-6 columns">
           <h1 id="graphicSymbol">Graphic Design</h1>
+          <p class="serviceP">Lorem ipsum dolor sit amet, consectetur borum.</p>
         </div>
-        <div class="small-6 columns">
-          <p class="serviceP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-          <div class="columns divres">
-            <h3 class="resume">View & Download My Resume</h3>
+          <div class="small-12 columns divres">
+            <a href="images/creative_resume.pdf" download="soberano_natalie_resume_2019.pdf" target="_blank"><h3 class="resume">View & Download My Resume</h3></a>
           </div>
       </section>
 
     {{!-- Open Contact Form --}}
       <section class=" row Contact">
         <h2 class="hidden">Contact Section</h2>
-        <h3 class="sectionBars">Contact</h3>
+        <h3 class="sectionBars" id="contact">Contact</h3>
 
         <div class="row">
-          <div class="small-3 medium-3 columns C">
+          <div class="small-3 medium-3 columns">
             <h3 class="myinfo">Contact</h3>
-            <h2 class="myinfo get">Get In Touch</h2>
           </div>
 
         <div class="small-3 medium-3 columns">
+          <h2 class="myinfo get">Get In Touch</h2>
 
-          <h1 class="myinfo">Phone</h1>
+          <h1 class="myinfo move" id="phone">Phone</h1>
           <p class="myinput">416-817-7729</p>
 
-          <h1 class="myinfo">Email</h1>
+          <h1 class="myinfo move" id="email">Email</h1>
           <p class="myinput">NatalieSoberano@yahoo.ca</p>
 
           <ul class="socialmedia myinfo">
@@ -180,7 +184,6 @@
             <li><a href="https://www.instagram.com/nats.illustrations/" target="_blank"><img src="images/Insta.png" alt="Instagram"></a></li>
           </ul>
         </div>
-
 
         <div class="small-6 columns form">
           <label>
@@ -208,7 +211,7 @@
       <section class="row">
         <h2 class="hidden">Footer</h2>
         <footer class="small-12 columns">
-          <img src="images/logo.png" alt="logo" class="logoFooter">
+          <a href="#top"><img src="images/logo.png" alt="logo" class="logoFooter"></a>
           <p class="nameBottom">Natalie Soberano</p>
         </footer>
       </section>

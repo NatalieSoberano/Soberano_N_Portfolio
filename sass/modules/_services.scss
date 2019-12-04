@@ -1,26 +1,40 @@
 .designImg {
-    height: 220px;
-    width: 220px;
+    min-width: 220px;
     margin: 0 auto;
-    display: block;
+    // display: block;
+    padding: 10px;
 }
 
 #graphicSymbol {
     text-align: center;
+    text-transform: uppercase;
+    font-family: $heading;
+    font-size: 20px;
 }
 
 .resume {
     text-align: center;
     color: white;
     text-transform: uppercase;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    font-family: $heading;
+    letter-spacing: 2.5px;
+}
+
+.resume:hover{
+    color: white;
+    background-color: $navy;
 }
 
 .divres {
     background-color: $purple;
-    height: 50px;
-    margin-bottom: 15px;
 }
 
 .serviceP {
     color: black;
+}
+.divres h1 {
+    font-family: $heading;
 }

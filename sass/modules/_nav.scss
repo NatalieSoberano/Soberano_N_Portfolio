@@ -1,17 +1,22 @@
 nav ul li {
     display: inline;
     margin-left: 70px;
-    padding: 0px;
     text-transform: uppercase;
+    margin-left: 0px;
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 5px;
 }
 
   nav ul {
     color: white;
     height: 50px;
+    margin-top: 18px;
   }
 
  li {
-    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
   }
 
   .mainnav {
@@ -20,16 +25,36 @@ nav ul li {
   }
 
 .logo {
-  padding: 5px;
+  padding-top: 0px;
+  float: left;
+  height: 75px;
+  width: 75px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+ul {
+  text-align: center;
+}
+
+li:first-child {
+  border: none;
 }
 
 
-//working but not in right spot
-// .fixed-nav-bar {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: 9999;
-//   width: 100%;
-//   height: 60px;
-// }
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  // display: none;
+}
+
+a:hover {
+  color: $deep-pink;
+}
+

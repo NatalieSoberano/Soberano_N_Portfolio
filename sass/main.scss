@@ -14,14 +14,15 @@
     font-family: $bodyfont;
     src: url('NewYorkLarge-Regular.otf') format('truetype');
   }
+  
 @font-face {
   font-family: $heading;
-  src: url('lato-regular-webfont.ttf') format('truetype');
+  src: url('Lato-Regular.ttf') format('opentype');
 }
 
 @font-face {
   font-family: $heading-b;
-  src: url('Lato-Bold.ttf') format('truetype');
+  src: url('Lato-Bold.ttf') format('opentype');
 }
 
 .hidden {
@@ -30,23 +31,28 @@
 
 body {
   font-family: $bodyfont;
-}
-
-.logo {
-  float: left;
-  height: 80px;
-  width: 80px;
+  left: 2px;
+  right: 0;
 }
 
 h3 {
   color: white;
   text-transform: uppercase;
-  // font-family: $heading-b;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: $heading-b;
+  letter-spacing: 2.75px;
 }
 
 .sectionBars {
   text-align: center;
   background-color: $dark-navy;
-
 }
 
+li {
+  font-family: $heading;
+}
+
+a {
+  color:white;
+}

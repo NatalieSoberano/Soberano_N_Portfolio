@@ -1,0 +1,48 @@
+.error h5 {
+    font-family: $heading;
+    font-size: 20px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    font-weight: inherit;
+    text-transform: uppercase;
+}
+
+.error-home {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.error {
+    background: $purple;
+    color: white;
+}
+
+.error a {
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    font-family: $bodyfont;
+    letter-spacing: 3px;
+}
+
+.error a:hover{
+    color: $deep-pink;
+}
+
+.E-status {
+    text-align: center;
+    font-size: 40px;
+    font-family: $heading;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-navy;
+}
+
+.errorimg {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
