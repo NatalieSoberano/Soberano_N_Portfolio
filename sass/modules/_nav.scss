@@ -39,11 +39,6 @@ ul {
   text-align: center;
 }
 
-li:first-child {
-  border: none;
-}
-
-
 .fixed-nav-bar {
   position: fixed;
   top: 0;
@@ -57,4 +52,6 @@ li:first-child {
 a:hover {
   color: $deep-pink;
 }
+
+
 

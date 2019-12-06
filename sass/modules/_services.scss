@@ -1,5 +1,5 @@
 .designImg {
-    min-width: 220px;
+    max-width: 70%;
     margin: 0 auto;
     // display: block;
     padding: 10px;
@@ -16,9 +16,11 @@
     text-align: center;
     color: white;
     text-transform: uppercase;
-    margin: 10px;
-    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    padding: 2px;
     border: 1px solid white;
+    width: 100%;
     font-family: $heading;
     letter-spacing: 2.5px;
 }
@@ -30,6 +32,7 @@
 
 .divres {
     background-color: $purple;
+    padding: 10px;
 }
 
 .serviceP {

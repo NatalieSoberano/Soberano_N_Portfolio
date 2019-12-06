@@ -10,4 +10,4 @@ function comiple(done) {
         .pipe(gulp.dest("css"))
 }
 
-exports.comiple = comiple
+exports.compile = compile

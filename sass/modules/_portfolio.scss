@@ -1,8 +1,31 @@
 .thumbnail {
-    position: relative;
     text-align: center;
     width: 100%;
+    border: 1.5px solid black;
 }
+
+.thumbnail:focus {
+    display: none;
+}
+
+.thumbnail:hover {
+    color: white;
+    box-shadow: 10px 12px $deep-pink ;
+}
+
+// .imagecontainer { 
+//     position: relative;
+//     display: block;
+//     margin: 0 auto;
+//     text-align: center;
+// }
+
+// .center {
+//     // top: 30%;
+//     // left: 30%;
+//     // transform: translate(-30%, -30%,);
+// }
+
 
 h5,h6 {
     // position: absolute;
@@ -20,4 +43,13 @@ h6 {
     font-family: $bodyfont;
     letter-spacing: 2px;
     font-size: 15px;
+}
+
+.fade
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:5;
 }

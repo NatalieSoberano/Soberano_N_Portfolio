@@ -1,0 +1,345 @@
+.hero-full-screen {
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  background: #000226;
+  background-size: cover;
+  position: relative; }
+
+.bottom-content-section {
+  position: relative; }
+  .bottom-content-section svg {
+    fill: #F2BAC9;
+    display: block;
+    margin: auto;
+    margin-top: 39px;
+    margin-bottom: 25px; }
+
+.name-top {
+  color: white;
+  text-align: center;
+  margin-top: 45px;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 10px; }
+
+.logo-top {
+  position: relative;
+  padding-top: 25px;
+  margin: 0 auto;
+  width: 237px;
+  text-align: center;
+  display: block; }
+
+.hero-nav ul li {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin: 5px;
+  padding: 8px;
+  letter-spacing: 2.5px; }
+
+nav {
+  background-color: #000226;
+  padding-bottom: 45px; }
+
+nav ul li {
+  display: inline;
+  margin-left: 70px;
+  text-transform: uppercase;
+  margin-left: 0px;
+  font-size: 15px;
+  border: 1px solid white;
+  padding: 5px; }
+
+nav ul {
+  color: white;
+  height: 50px;
+  margin-top: 18px; }
+
+li {
+  margin-left: 0px;
+  margin-right: 10px; }
+
+.mainnav {
+  background-color: #000226;
+  padding-top: 25px; }
+
+.logo {
+  padding-top: 0px;
+  float: left;
+  height: 75px;
+  width: 75px; }
+
+nav li {
+  display: inline-block; }
+
+ul {
+  text-align: center; }
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px; }
+
+a:hover {
+  color: #F2A2B7; }
+
+@media screen and (min-width: 40em) {
+  .fixed-nav-bar li {
+    display: inline;
+    margin-left: 70px;
+    text-transform: uppercase;
+    margin-left: 0px;
+    font-size: 25px;
+    border: 0.5px solid white;
+    padding: 5px; } }
+
+#player-overlay {
+  padding-top: 10px; }
+
+.thumbnail {
+  text-align: center;
+  width: 100%;
+  border: 1.5px solid black; }
+
+.thumbnail:focus {
+  display: none; }
+
+.thumbnail:hover {
+  color: white;
+  box-shadow: 10px 12px #F2A2B7; }
+
+h5, h6 {
+  text-align: center; }
+
+h5 {
+  text-transform: uppercase;
+  font-family: "Lato-Bold", "sans-serif";
+  font-size: 20px;
+  letter-spacing: 2px; }
+
+h6 {
+  font-family: "NewYorkLarge-Regular", "serif";
+  letter-spacing: 2px;
+  font-size: 15px; }
+
+.me {
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 5px;
+  display: block; }
+
+.mePara {
+  color: black;
+  text-align: center;
+  margin: 5px;
+  margin-left: 10px;
+  padding-left: 10px; }
+
+.designImg {
+  min-width: 220px;
+  margin: 0 auto;
+  padding: 10px; }
+
+#graphicSymbol {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato-Regular", "sans-serif";
+  font-size: 20px; }
+
+.resume {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  border: 1px solid white;
+  width: 400px;
+  font-family: "Lato-Regular", "sans-serif";
+  letter-spacing: 2.5px; }
+
+.resume:hover {
+  color: white;
+  background-color: #0F1B3F; }
+
+.divres {
+  background-color: #8C6481;
+  padding: 10px; }
+
+.serviceP {
+  color: black; }
+
+.divres h1 {
+  font-family: "Lato-Regular", "sans-serif"; }
+
+.input {
+  font-family: "NewYorkLarge-Regular", "serif";
+  font-size: 11px; }
+
+.socialmedia {
+  height: 50px;
+  width: 50px; }
+
+ul {
+  list-style-type: none; }
+
+.Contact p, h1 {
+  color: black; }
+
+.myinfo {
+  text-transform: uppercase;
+  font-family: "Lato-Regular", "sans-serif"; }
+
+.get {
+  color: #F2BAC9;
+  font-family: "Lato-Bold", "sans-serif"; }
+
+.submit {
+  background-color: #8C6481;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.submit:hover {
+  background-color: #0F1B3F; }
+
+.myemail {
+  color: black; }
+
+.show-lightbox {
+  display: flex !important; }
+
+.lightbox {
+  display: none;
+  min-height: 200vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  margin: 0 auto; }
+  .lightbox .close {
+    right: 20px;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 2em;
+    position: fixed;
+    border: thin solid #000226;
+    border-radius: 50%;
+    background-color: #F2BAC9;
+    color: #000226; }
+
+.text {
+  font-family: "NewYorkLarge-Regular", "serif";
+  color: black; }
+
+.logoFooter {
+  float: left;
+  position: relative;
+  height: 70px;
+  width: 70px;
+  margin-left: 8px; }
+
+footer {
+  background-color: #000226;
+  height: 75px;
+  padding-top: 2px; }
+
+.nameBottom {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 26px;
+  margin-left: 95px; }
+
+.error h5 {
+  font-family: "Lato-Regular", "sans-serif";
+  font-size: 20px;
+  padding-top: 30px;
+  letter-spacing: 2px;
+  font-weight: inherit;
+  text-transform: uppercase; }
+
+.error-home {
+  margin-top: 0px;
+  padding-top: 0px; }
+
+.error {
+  background: #8C6481;
+  color: white; }
+
+.error a {
+  text-align: center;
+  font-size: 35px;
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  font-family: "NewYorkLarge-Regular", "serif";
+  letter-spacing: 3px; }
+
+.error a:hover {
+  color: #F2A2B7; }
+
+.E-status {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lato-Regular", "sans-serif";
+  text-align: center;
+  text-transform: uppercase;
+  color: #000226; }
+
+.errorimg {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px; }
+
+@font-face {
+  font-family: "NewYorkLarge-Regular", "serif";
+  src: url("NewYorkLarge-Regular.otf") format("truetype"); }
+
+@font-face {
+  font-family: "Lato-Regular", "sans-serif";
+  src: url("Lato-Regular.ttf") format("opentype"); }
+
+@font-face {
+  font-family: "Lato-Bold", "sans-serif";
+  src: url("Lato-Bold.ttf") format("opentype"); }
+
+.hidden {
+  display: none; }
+
+body {
+  font-family: "NewYorkLarge-Regular", "serif";
+  left: 2px;
+  right: 0; }
+
+h3 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: "Lato-Bold", "sans-serif";
+  letter-spacing: 2.75px; }
+
+.sectionBars {
+  text-align: center;
+  background-color: #000226; }
+
+li {
+  font-family: "Lato-Regular", "sans-serif"; }
+
+a {
+  color: white; }
+
+a:hover {
+  color: #F2A2B7; }
