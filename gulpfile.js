@@ -3,7 +3,7 @@ const sass =require('gulp-sass');
 
 // set up some simple tasks for Gulp to run
 
-function comiple(done) {
+function compile(done) {
     gulp.src("sass/**/*.scss")
         .pipe(sass())
         .on("error", sass.logError)

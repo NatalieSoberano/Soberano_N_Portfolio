@@ -3,14 +3,18 @@
     font-size: 11px;
 }
 
-.socialmedia {
-    height: 50px;
-    width: 50px;
+.getinTouch {
+    padding-left: 40px;
 }
 
 ul {
     list-style-type: none;
+    display: flex;
   }
+
+.socialmedia li {
+    display: inline;
+}
 
 .Contact p, h1 {
     color: black;
@@ -22,8 +26,10 @@ ul {
 }
 
 .get {
-    color: $light-pink;
+    color: $deep-pink;
     font-family: $heading-b;
+    font-size: 25px;
+    padding-bottom: 10px;
 }
 
 .submit {
@@ -37,18 +43,27 @@ ul {
     background-color: $navy;
 }
 
-// .myInfoSection {
-//     margin-right: 80px;
-// }
-
-// .small-3 {
-//     width: 5%;
-// }
-
-
 .myemail {
     color: black;
 }
 
+form {
+    padding-right: 20px;
+}
 
+.socialmedia img {
+    height: 35px;
+    width: 35px;
+}
+
+h1 {
+    font-size: 21px;
+    font-family: $heading;
+}
+
+.myinput {
+    font-family: $bodyfont;
+    font-weight: lighter;
+    font-size: 15px;
+}
 

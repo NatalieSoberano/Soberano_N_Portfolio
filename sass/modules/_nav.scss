@@ -1,11 +1,11 @@
 nav ul li {
     display: inline;
-    margin-left: 70px;
     text-transform: uppercase;
-    margin-left: 0px;
-    font-size: 15px;
+    margin-left: 5px;
+    // font-size: 15px;
     border: 1px solid white;
     padding: 5px;
+    margin: 0 auto;
 }
 
   nav ul {
@@ -15,13 +15,16 @@ nav ul li {
   }
 
  li {
-    margin-left: 0px;
     margin-right: 10px;
   }
 
   .mainnav {
     background-color: $dark-navy;
     padding-top: 25px;
+  }
+
+  .mainnav ul li {
+    padding: 10px;
   }
 
 .logo {
@@ -46,12 +49,28 @@ ul {
   z-index: 9999;
   width: 100%;
   height: 60px;
-  // display: none;
+}
+
+.fixed-nav-bar ul li {
+  padding: 5px;
 }
 
 a:hover {
   color: $deep-pink;
 }
 
+  /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+  @media screen and (min-width: 600px) {
+    nav ul li  {
+      font-size: 20px;
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    nav ul li  {
+      font-size: 15px;
+    }
+  }
 
 
