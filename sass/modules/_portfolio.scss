@@ -18,23 +18,14 @@
     box-shadow: 10px 12px $deep-pink ;
 }
 
-h5,h6 {
-    // position: absolute;
-    text-align: center;
-}
 
-h5 {
-    text-transform: uppercase;
-    font-family: $heading-b;
-    // font-size: 20px;
-    // letter-spacing: 2px;
-}
-
-// h6 {
-//     font-family: $bodyfont;
+// h5 {
+//     text-transform: uppercase;
+//     font-family: $heading-b;
+//     font-size: 20px;
 //     letter-spacing: 2px;
-//     font-size: 15px;
 // }
+
 
 // .fade
 //     {
@@ -46,20 +37,115 @@ h5 {
 //         opacity:5;
 //     }
 
-
  /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
- @media screen and (min-width: 600px) {
-    h5  {
-      font-size: 15px;
-      letter-spacing: 2px;
-    }
-  }
+//  @media screen and (min-width: 600px) {
+//     h5  {
+//       font-size: 15px;
+//       letter-spacing: 2px;
+//     }
+//   }
   
-  /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 600px) {
-    h5  {
-      font-size: 12px;
-      letter-spacing: 1px;
-    }
-  }
+//   /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+//   @media screen and (max-width: 600px) {
+//     h5  {
+//       font-size: 12px;
+//       letter-spacing: 1px;
+//     }
+//   }
+
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 50%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+
+.hvrbox .hvrbox-layer_bottom {
+  display: block;
+}
+
+.hvrbox:hover .hvrbox-layer_bottom {
+  display: block;
+  box-shadow: 10px 12px $deep-pink ;
+}
+
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 55%;
+	height: 50%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+
+.hvrbox .hvrbox-text {
+	text-transform: uppercase;
+	color: white;
+	font-family: $heading-b;
+	font-size: 15px;
+	letter-spacing: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+  	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+.hvrbox .hvrbox-layer_slideup {
+	-moz-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+}
+.hvrbox:hover .hvrbox-layer_slideup,
+.hvrbox.active .hvrbox-layer_slideup {
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
 

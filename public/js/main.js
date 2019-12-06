@@ -91,7 +91,6 @@ function buildLightBox(portfolio, el) {
     let targetEl= this, 
         url =`/svgdata/${this.id}`;
 
-
     fetch(url)
     .then(res => res.json())
     .then(data => {

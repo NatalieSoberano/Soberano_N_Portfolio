@@ -24,6 +24,9 @@ router.get('/svgdata/:target', (req, res) => {
   //here is where we set up the query
   let query = `SELECT * FROM tbl_works_lightbox WHERE id="${req.params.target}"`;
 
+	// let query = `SELECT * FROM LEFT JOIN '.$this->tbl_works_lightbox' 
+	// 	link ON link.tbl_imgs = tbl_imgs_id GROUP BY tbl_works_lightbox_id`;
+
   sql.query(query, (err, result) => {
     if (err) console.log(err); // something broke
 
