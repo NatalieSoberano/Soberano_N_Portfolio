@@ -1,7 +1,7 @@
 .designImg {
-    max-width: 70%;
-    margin: 0 auto;
-    // display: block;
+    // max-width: 50%;
+    margin: 15%;
+    display: block;
     padding: 10px;
 }
 
@@ -37,7 +37,14 @@
 
 .serviceP {
     color: black;
+    font-size: 10px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    display: block;
+
 }
+
+
 .divres h1 {
     font-family: $heading;
 }

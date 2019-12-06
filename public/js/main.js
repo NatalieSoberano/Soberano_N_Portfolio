@@ -10,7 +10,6 @@ form = document.querySelector('form'),
 submit = form.querySelector('.submit-button'),
 hero = document.querySelector('#hero');
 
-
 var waypoint = new Waypoint({
     element: document.querySelector('#main'),
     handler: function(direction) {
@@ -77,7 +76,6 @@ function showNav(){
 }
 
 function buildLightBox(portfolio, el) {
-    debugger;
     lightBox.querySelector(".name").textContent = `Name/${portfolio.name}`;
     lightBox.querySelector(".img").src = `images/${portfolio.img}`;
     lightBox.querySelector(".text").textContent = `Text/${portfolio.text}`;
