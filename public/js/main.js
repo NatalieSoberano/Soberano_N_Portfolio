@@ -72,17 +72,25 @@ function handleMail(event) {
 
 
 function showNav(){
-    nav.classList.remove('hide');
+    nav.classList.remove('hide'); 
 }
 
 function buildLightBox(portfolio, el) {
-    lightBox.querySelector(".name").textContent = `Name/${portfolio.name}`;
-    lightBox.querySelector(".img").src = `images/${portfolio.img}`;
-    lightBox.querySelector(".text").textContent = `Text/${portfolio.text}`;
+    // lightBox.querySelector(".name").textContent = `name/${portfolio.name}`;
+    // lightBox.querySelector(".text").textContent = `text/${portfolio.text}`;
+    lightBox.querySelector(".name").textContent = `${portfolio.name}`;
+    lightBox.querySelector(".text").textContent = `${portfolio.text}`;
+    lightBox.querySelector(".img1").src = `images/${portfolio.img1}`;
+    lightBox.querySelector(".img2").src = `images/${portfolio.img2}`;
+    lightBox.querySelector(".img3").src = `images/${portfolio.img3}`;
+    lightBox.querySelector(".img4").src = `images/${portfolio.img4}`;
+    lightBox.querySelector(".img5").src = `images/${portfolio.img5}`;
     // the first brackets are a class and the second image is the column in the db
 
     //show the popover
     lightBox.classList.add('show-lightbox');
+
+    nav.classList.add('hide');
 }
 
   //run the fetch API and get the DB data

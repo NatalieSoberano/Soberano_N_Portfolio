@@ -61,7 +61,7 @@
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	max-width: 50%;
+	max-width: 100%;
 	height: auto;
 }
 .hvrbox img {
@@ -84,14 +84,15 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	max-width: 55%;
+	max-width: 65%;
 	height: 50%;
 	display: block;
 	margin: 0 auto;
-	margin-top: 20px;
+	// margin-top: 25px;
 	background: rgba(0, 0, 0, 0.6);
 	color: #fff;
 	padding: 15px;
+	margin-top: 20px;
 	-moz-transition: all 0.4s ease-in-out 0s;
 	-webkit-transition: all 0.4s ease-in-out 0s;
 	-ms-transition: all 0.4s ease-in-out 0s;
@@ -107,7 +108,7 @@
 	text-transform: uppercase;
 	color: white;
 	font-family: $heading-b;
-	font-size: 15px;
+	// font-size: 15px;
 	letter-spacing: 2px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -149,3 +150,37 @@
 	transform: translateY(0);
 }
 
+ /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+ @media screen and (min-width: 600px) {
+    p  {
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    p  {
+      font-size: 11px;
+      letter-spacing: 1px;
+	}
+	
+	#thermo {
+		font-size: 9px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#GOT {
+		padding-top: 2px;
+	}
+
+	#OHM {
+		padding-top: 5px;
+	}
+
+	#custom {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+  }
