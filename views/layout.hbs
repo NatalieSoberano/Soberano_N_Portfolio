@@ -49,16 +49,6 @@
           </nav>
         </header>
 
-      {{!-- Open Video Section --}}
-          <h2 class="hidden vidsection">Video Section - Demo Reel</h2>
-          <section class="row" id="top">
-            <div class="small-12 columns" id="player-overlay">
-              <div class="responsive-embed">
-                <video controls src="video/vid.mp4" width="100%" video="100%" style="width:100%" style="height:100%"></video>
-              </div>
-            </div>
-          </section>
-
       {{!-- Open Portfolio Section --}}
         <section class="row small-up-3 medium-up-3 large-up-3">
           <h2 class="hidden">Portfolio Section</h2>
@@ -134,9 +124,9 @@
         <div class="row">
           <div class="small-12 column lbcontent">
             <h1 class="name"></h1>
-            <h4 class="text"></h4>
-            <h4 class="text2"></h4>
-            <h4 class="text3"></h4>
+            <h4 class="text">Database Content</h4>
+            <h4 class="text2">Database Content</h4>
+            <h4 class="text3">Database Content</h4>
               <img src="/images/" alt="database image" class="img1 pics">
               <img src="/images/" alt="database image" class="img2 pics">
               <img src="/images/" alt="database image" class="img3 pics">
@@ -146,6 +136,18 @@
         </div>
               <span class="close">x</span>
         </section>
+
+    {{!-- Open Video Section --}}
+          <h2 class="hidden vidsection">Video Section - Demo Reel</h2>
+          <section class="row" id="top">
+            <h2 class="hidden"> Responsive Video Player</h2>
+            <div class="small-12 columns" id="player-overlay">
+              <div class="responsive-embed">
+                <video controls src="video/vid.mp4" src="video/vid.ogg" src="video/vid.webm" type="video/mp4" width="100%" video="100%" style="width:100%" style="height:100%">Sorry, your browser does not support this video tag.</video>
+                
+              </div>
+            </div>
+          </section>
 
     {{!-- Open About Section  --}}
       <section class="row">
