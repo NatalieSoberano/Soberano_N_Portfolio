@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 29, 2019 at 02:35 AM
+-- Generation Time: Dec 08, 2019 at 02:34 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -23,56 +23,40 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_about`
---
-
-CREATE TABLE `tbl_about` (
-  `ID` int(11) NOT NULL,
-  `NAME` varchar(50) NOT NULL,
-  `IMG` varchar(50) NOT NULL,
-  `TEXT` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_services`
---
-
-CREATE TABLE `tbl_services` (
-  `ID` int(11) NOT NULL,
-  `NAME` varchar(50) NOT NULL,
-  `IMG` varchar(100) NOT NULL,
-  `TEXT` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tbl_works_lightbox`
 --
 
 CREATE TABLE `tbl_works_lightbox` (
   `ID` int(50) NOT NULL,
-  `IMG` varchar(300) NOT NULL,
-  `NAME` varchar(200) NOT NULL
+  `name` varchar(200) NOT NULL,
+  `text` varchar(2000) NOT NULL,
+  `text2` varchar(2000) NOT NULL,
+  `text3` varchar(1000) NOT NULL,
+  `img1` varchar(500) NOT NULL,
+  `img2` varchar(500) NOT NULL,
+  `img3` varchar(500) NOT NULL,
+  `img4` varchar(500) NOT NULL,
+  `img5` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_works_lightbox`
+--
+
+INSERT INTO `tbl_works_lightbox` (`ID`, `name`, `text`, `text2`, `text3`, `img1`, `img2`, `img3`, `img4`, `img5`) VALUES
+(1, 'Housecom™ ThermoSecurity™ System', 'Problem:\r\nThis project was created for a midterm ‘Hackathon’ at Fanshawe College (Fall 2019). The team assignment was to create and develop a brand, functioning website, promotional video and other supporting collateral in a 24 hour time frame. ', 'Solution/Lesson Learned:\r\nMy team consisted of a front-end/back-end web developer, a motion designer/video editor, two graphic designers and myself - the project manager and graphic designer. \r\n\r\nAs a project manager it was my responsibility to make sure that everyone was on task and meeting all assignment requirements. In order to do so, I had to remain organized and time-manage each individual within my group. \r\n\r\nMoreover, as one of three graphic designers, we constructed a brand identity consisting of unique fonts, colours and a logo. Furthermore, my job was to create a brand document to outline all the guidelines of our design rules and brand attributes. \r\n\r\nWe chose to have a logo that emphasized all elements of HouseCom™ ThermoSecurity™ Security System.Thus, our brand’s primary logo consists of a graphical element and a word mark. Combined, they are an elongated emblem that symbolizes our brand in its entirety. Our graphical element is made up of a house, a lock, a thermostat and an eye to embody our product capabilities in one sleek and simple icon. Furthermore, for our colour choices we agreed on an array of neutral and accent shades that best reflect our brands progressive and innovative feel. While the pink is our complimentary accent colour, the indigo and navy provide a foundational identity in our brand that symbolizes loyalty, confidence and faith; values we want our customers to feel when thinking of our product. All our designs aimed to be sophisticated and sleek to provide customers with comfort, convenience and connectivity.  ', 'This assignment taught me the necessary qualities to be a strong leader: knowing when to take charge and knowing when to step back. For example, although it was my responsibility to make sure everyone was on-task, each individual works differently and thus, I wanted to make sure I wasn’t overwhelming my group members by constantly asking them how it was going. Instead, I made check-lists and would check it off as we went, verbally and visually reminding everyone what we still had left to accomplish. Moreover, in my role as a graphic designer, I was able to gain a sense of how a real-world company would establish their brand identity and presence. ', 'hack1.png', 'hack2.png', 'hack3.png', 'hack4.png', 'hack5.png'),
+(2, 'Organ Donation Campaign', 'Problem: \r\nFor this assignment at Fanshawe College, I along with two other group members, were responsible for creating a campaign to promote an innovative type of organ donation that utilized decellularization; When an organ is stripped of all the living cells of a donor, leaving a blueprint of the organ that can be repopulated with the cells of the receiving patient. This processes needed to be explained in a simple and effective manner. ', 'Solution/Lesson Learned: \r\nAs a team, we created the branding for our organization calling it “The Missing Piece”. After sketching some ideas together and deciding on our final creation, I brought our logo to life in Illustrator. Our logo utilized a heart to represent an organ, a hand to represent the innovation and growth, and the puzzle piece symbolizes the way individuals can be a part of this process. \r\n\r\nIn creating our campaign we wanted to have striking colours, therefore we stuck with a desaturated red as our emphasizing colour, and two shades of grey. Red is a powerful colour that is often associated with medical issues, love and compassion, aspects we want to be portrayed through our brand identity. By utilizing these colours, we were able to create a web design, merchandise and ads to promote our campaign. ', 'Moreover, it was my sole responsibility to create the informational broacher to explain this process of decelluralization. I had to take into account all the necessary information, prioritize and simplify it before starting on my design. I wanted to have an image/icon heavy broacher to help readers gain a greater understanding of the process. \r\n\r\nThis assignment taught me the value of creating a well-rounded brand identity, as it comes into play in every promotional aspect a brand has. As well, I needed to represent the seriousness of the issue, with the simplistic solution of donation. By incorporating a simple design and striking bold and grey colours, I was able to highlight both.', 'Organ4.png', 'Organ3.png', 'Organ2.png', 'Organ1.png', 'Organ5.png'),
+(3, 'Custom Illustrations', 'As a side venture and pass-time, I have created various illustrations of myself, friends, family and have even commissioned some gifts.', 'I have found that in creating these images, I have been learning how to take a meaningful photographs and turn them into a keepsake and gift.  ', 'The difficult aspect of custom illustrations is that I need to blend my creative ideas with the desires of the customer. By utilizing pop-art inspirations, I am able to create modern art that celebrates a specific moment in time.', 'Insta1.png', 'Insta2.png', 'Insta3.png', 'Insta4.png', 'Insta5.png'),
+(4, 'Graffiti Design', 'Problem:\r\nFor on of my first major individual assignments at Fanshawe college, we were asked to create a graffiti design that would eventually be photoshopped onto a picture we took to create a realistic graffiti image. ', '\r\nSolution/Lesson Learned:\r\nIn coming up with an idea for my design, I did a lot of research on graffiti and looked for inspiration. I have always been creatively inspired by Disney, and I came up with the idea to have Alice from Alice in Wonderland falling down the rabbit-hole of modern-day society. In order to create this graphic, I had to utilize icons that are well recognizable and allegorical to illustrate the media obsessed world we live in today. \r\n', 'After creating our design and mocking it up in illustrator, we were asked to go out and photograph ourselves next to somewhere we thought our graffiti should be placed. For my image I decided to take a picture of myself taking a selfie with the brick wall, where I would eventually place my design.This further plays into my design, as I was giving an example of how society consumes media by sharing it on social media by consuming it myself!\r\n\r\nNext we had to photoshop our design onto our image and make it look as realistic as possible. This assignment taught me great skills in photoshop techniques such as realistic blending and shadows, as well as how to think critically about the assignment’s essential purpose.', 'Graf1.png', 'Graf2.png', 'Graf3.png', 'Graf4.png', 'Graf5.png'),
+(5, 'Cricket Infographic', 'The Problem: \r\nIn this individual school assignment, we were given a riddle to solve and told to make a infographic explaining the process in the simplest form. The solved riddle was the game of cricket. Having never played the game before, this assignment required a lot of research to gain an understand of the required equipment, rules and objective of the game. ', 'The Solution/Lesson Learned:\r\nAfter gathering my research, I organized it into 5 groups: what you need, game objective, how to play, how the batsman scores and how to get the batsman out. Next, I choose a colour scheme of beige, green and two shades of blue to be my background and header colours. This allowed all my other content to stand out on the page. I decided to have my background be sliced into diagonal sections to give it an eye-catching design. Furthermore, I created all the image assets within my infographic to make sure they were easy to understand. In creating the various teams, I represented them and their goals through two colours, so a reader could easily understand the difference between the two. I used minimal writing aside from captions to fully portray the desired message of how to play the game. ', 'This assignment taught me the required research necessary in creating an infographic and the process of breaking up that information into easy to recognize icons and images. For this assignment, it was critical to balance my design elements well on the page, leaving enough white space as to not over clutter the infographic. With so much information, this was challenging but ultimately lead me to a comprehensive and cohesive design.', 'infographic.png', 'info1.png', 'info2.png', 'info3.png', 'info4.png'),
+(6, 'Game Of Thrones Wine Mashup', 'Problem: \r\nFor this individual assignment, each person was given a brand in which they had to create a wine or beer mashup. We were asked to create a 3D model of the wine/beer bottle we wanted to use and the label for the product. We also had to create a magazine advertisement to promote our new collaboration. ', 'The brand I received was Game of Thrones. As one of the only people who has yet to watch the show, this was a bit difficult as I had to understand the show\'s main plot and themes. I did research on the show and asked friends questions before creating my design. ', 'Solution/Lesson Learned:\r\nI created a label that utilized mimicked parchment paper in muted tones that I thought symbolized royalty, tradition and medieval times. When creating my wine bottle, I wanted the look of a vintage wine bottle than a modern one, and designed it to be shorter and thicker. For my magazine advertisement, I created a background that  utilized various images, dark colours, blue tones and overlays to portray an ominous yet aesthetically pleasing image. When coming up with a slogan for my wine, I wanted to think of something that would honour the show, even though it is now finished, therefore, I came up with “A toast to the throne”. I learned how to creatively combine medieval qualities with current sensibilities to create a design that illustrated the brand of Game of Thrones yet was captivating to a modern audience. ', 'GOT1.png', 'GOT2.png', 'GOT3.png', 'GOT4.png', 'GOT5.png'),
+(7, 'Chabad Western ', 'Chabad Western is a Jewish organization that provides students at Western with a place to connect, learn and practice their religion through various programs. ', 'Problem: \r\nAs the lead graphic designer, it is my job to create promotional content to bring awareness to upcoming events. ', 'Solution/ Lessons Learned:\r\nIn creating design assets, I have found that simple yet eye-catching designs are what best promote these events. My creations are mostly shared on Instagram stories and therefore, they must make an impact in their first few seconds of being viewed. Additionally, I have created various content for Chabad’s annual women’s challah bake such as a snapchat filter and aprons. As Chabad is a religious organization, it was difficult to respect their religious requirements as well as appeal to the younger, university-aged demographic.  By including fun and inviting images and fonts, I was able to create buzz and excitement over certain events for a younger audience.', 'Chabad1.png', 'Chabad2.png', 'Chabad4.png', 'Chabad5.png', 'Chabad3.png'),
+(8, 'Lug Hockey', 'Lug Hockey is an organization that allows university students to participate in various sports leagues such as hockey, softball and baseball. As one of their graphic designers, I have been asked to create various promotional content for the brand. I have created the logos for jerseys, tent banners, table cloths, ping-pong balls, packaging and a brand t-shirt. ', 'Problem: \r\nThe most challenging thing I had to create was the brand t-shirt. The client had requested that I create a shirt design with the similar feel to that of a concert promotion t-shirt. This was difficult at the start because the brand does not have an icon in their logo, just a word-mark.', 'Solution/Lesson Learned: \r\nHowever, after many designs I came to the final product utilizing shapes, distressed overlays and unique fonts to create my design. The t-shirt was produced and I was able to see my design come to life. This was an incredible feeling. The process taught me about the hard work and back-and-forth process it takes to make someone else’s vision come to life.  \r\n', 'LUG2.png', 'LUG1.png', 'LUG3.png', 'LUG4.png', 'LUG5.png'),
+(9, 'OHM Charity Fashion Show', 'OHM Charity Fashion Show is a dance fashion show created by students at  Western University in order to raise money and awareness for Canadian Cancer Society in a creative and exciting way. ', 'Problem: \r\nThis year’s upcoming show’s theme is Campus Lifestyle. It is my job as the senior graphic designer to create a logo and additional promotional content to be displayed on various social media pages. \r\n\r\nCurrently, I am in the process of creating a logo with the headings of the show. Below are some of the designs we have been working on. It was important in creating this logo to express the different styles that can be seen on campus and thus, I chose to represent that through the style of the different seasons. ', 'Solutions/Lesson Learned: \r\nThis volunteer position has taught me how to work well within a team, meet deadlines and receiving constructive criticism. As I am in the process of creating a logo for the show, it has taught me how to work with a client and create something of someone else’s vision and requirements. Moreover, through this lengthy process, I have learnt how to stay motivated and gather further inspiration as we continue the logo creation.', 'OHM1.png', 'OHM2.png', 'OHM3.png', 'OHM4.png', 'OHM5.png');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `tbl_about`
---
-ALTER TABLE `tbl_about`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `tbl_services`
---
-ALTER TABLE `tbl_services`
-  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `tbl_works_lightbox`

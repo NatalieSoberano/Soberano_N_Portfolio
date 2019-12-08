@@ -1,10 +1,11 @@
 .error h5 {
     font-family: $heading;
     font-size: 20px;
-    padding-top: 30px;
+    padding-top: 25px;
     letter-spacing: 2px;
     font-weight: inherit;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .error-home {
@@ -12,9 +13,13 @@
     padding-top: 0px;
 }
 
+.errorh {
+    background-color: $dark-navy;
+    height: 60px;
+}
+
 .error {
-    background: $purple;
-    color: white;
+    color: black;
 }
 
 .error a {
@@ -23,18 +28,21 @@
     text-decoration: none;
     margin: 0 auto;
     display: block;
-    font-family: $bodyfont;
+    font-family: $heading;
     letter-spacing: 3px;
+    color: $deep-pink;
+    text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .error a:hover{
-    color: $deep-pink;
+    color: $navy;
 }
 
 .E-status {
     text-align: center;
     font-size: 40px;
-    font-family: $heading;
+    font-family: $bodyfont;
     text-align: center;
     text-transform: uppercase;
     color: $dark-navy;

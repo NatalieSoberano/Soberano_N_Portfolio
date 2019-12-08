@@ -1,8 +1,7 @@
 .designImg {
     // max-width: 50%;
-    margin: 15%;
+    // margin: 15%;
     display: block;
-    padding: 10px;
 }
 
 #graphicSymbol {
@@ -10,6 +9,13 @@
     text-transform: uppercase;
     font-family: $heading;
     font-size: 20px;
+    text-decoration: none;
+    padding-top: 2px;
+}
+
+#services {
+    padding-bottom: none;
+    margin-bottom: none;
 }
 
 .resume {
@@ -37,14 +43,40 @@
 
 .serviceP {
     color: black;
-    font-size: 10px;
+    font-size: 12px;
     margin: 0 auto;
     padding-bottom: 10px;
-    display: block;
+    display: block;  
+    text-align: left;
+}
 
+.sHeading {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: circle; 
 }
 
 
 .divres h1 {
     font-family: $heading;
 }
+
+ /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+ @media screen and (min-width: 650px) {
+    .designImg {
+      max-width: 70%;
+      padding-bottom: 20px;
+    }
+    
+    .serviceP {
+       font-size: 18;
+    }
+    
+    .sHeading {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+  }
