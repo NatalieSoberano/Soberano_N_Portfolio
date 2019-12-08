@@ -1,16 +1,60 @@
 .me {
     min-width: 250px;
     margin: 0 auto;
-    padding: 5px;
+    padding-left: 5px;
+    padding-top: 50px;
     display: block;
 }
 
 .mePara {
     color: black;
-    text-align: center;
-    margin: 5px;
-    margin-left: 10px;
-    padding-left: 10px;
-    
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 60px;
+    padding-left: 30px;
+    margin-bottom: 0px;
 }
 
+.sig {
+    min-width: 150px;
+    margin: 0 auto;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    display: block;
+}
+
+.mePara:first-child {
+    padding-bottom: 15px;
+}
+
+#meP2 {
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+@media screen and (min-width: 750px) {
+    .mePara  {
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+    
+    .sig {
+        max-width: 150px;
+        margin-left: 70px;
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 750px) {
+    .mePara  {
+      font-size: 9px;
+      letter-spacing: 1px;
+    }
+
+    .me {
+        min-width: 200px;
+    }
+  }

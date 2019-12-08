@@ -80,6 +80,8 @@ function buildLightBox(portfolio, el) {
     // lightBox.querySelector(".text").textContent = `text/${portfolio.text}`;
     lightBox.querySelector(".name").textContent = `${portfolio.name}`;
     lightBox.querySelector(".text").textContent = `${portfolio.text}`;
+    lightBox.querySelector(".text2").textContent = `${portfolio.text2}`;
+    lightBox.querySelector(".text3").textContent = `${portfolio.text3}`;
     lightBox.querySelector(".img1").src = `images/${portfolio.img1}`;
     lightBox.querySelector(".img2").src = `images/${portfolio.img2}`;
     lightBox.querySelector(".img3").src = `images/${portfolio.img3}`;

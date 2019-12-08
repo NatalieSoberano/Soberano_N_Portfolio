@@ -23,6 +23,10 @@ ul {
 .myinfo {
     text-transform: uppercase;
     font-family: $heading;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 0px;
+    margin-bottom: 0px;
 }
 
 .get {
