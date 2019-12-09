@@ -15,6 +15,33 @@ const transporter = mailer.createTransport({
 	}
 });
 
+router.get('/', (req, res) => {
+
+		// get the connection via the connection pool, and then run the query -> just one added step
+		sql.getConnection((err, connection) => {
+			if (err) { return console.log(error.message); }
+	
+			let query = `SELECT * FROM tbl_works_lightbox WHERE id="${req.params.target}"`;
+	
+			sql.query(query, (err, rows) => {
+				connection.release(); // send this connection back to the pool
+	
+				if (err) {
+					// will exit the function and log the error
+					return console.log(err.message);
+				}
+	
+				console.log(rows); // this should be your database query result
+	
+				// render our page
+				res.render('layout', {data: rows}); // whatever page and data you're rendering
+			});
+		});
+	})
+	
+
+
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Natalie Soberano - Portfolio' });
