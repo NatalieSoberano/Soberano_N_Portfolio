@@ -5,10 +5,10 @@ const sql = require('mysql');
 const connect = sql.createPool({
     host: config.host,
     // port: config.port,
-    uname: config.uname, 
-    pword: config.pword, 
-    dbase: config.dbase,
-    connectionLimit : 10
+    user: config.uname,
+    password: config.pword,
+    database: config.dbase,
+    connectionLimit: 10
 });
 
 module.exports = connect;
