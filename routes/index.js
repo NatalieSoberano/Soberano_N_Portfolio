@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 
 		// get the connection via the connection pool, and then run the query -> just one added step
 		sql.getConnection((err, connection) => {
-			if (err) { return console.log(error.message); }
+			if (err) { return console.log(err.message) }
 	
 			let query = `SELECT * FROM tbl_works_lightbox WHERE id="${req.params.target}"`;
 	
